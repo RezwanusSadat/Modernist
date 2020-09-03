@@ -1,0 +1,457 @@
+/*============common css===========*/
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*==========font part===========*/
+@font-face{
+    font-family: Source-Serif-Pro-ExtraLight;
+    src: url('../fonts/Source Serif Pro ExtraLight.otf')
+}
+
+/*==============================================
+                    wrapper part
+===============================================*/
+
+.wrapper_full{
+    width:100%;
+    margin:auto;
+}
+.wrapper{
+    width: 960px;
+    margin:auto;
+}
+/*==============================================
+                    header part
+===============================================*/
+
+.header_full{
+    height: 600px;
+    background-color: #290000;
+    border-top: 5px solid #76c38f;
+    overflow: hidden;
+}
+
+/*==========top bar part===========*/
+
+.topbar{
+    height: 120px;
+}
+
+/*------------logo-------------*/
+
+.logo{
+    margin-top: 40px;
+    float: left;
+}
+
+/*------------------menu-------------*/
+
+.menu{
+    float: right;
+}
+.menu > ul > li{
+    margin-left: 10px;
+    list-style-type: none;
+    float: left;
+}
+.menu > ul > li > a{
+    line-height: 120px;
+    font-family: Source-Serif-Pro-ExtraLight;
+    padding: 13px 20px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 10px;
+}
+.menu > ul > li > a:hover{
+    background-color: #76c38f;
+}
+.menu > ul > li > .active{
+    background-color: #76c38f;
+}
+.menu > ul > li > ul{
+    margin-top: -40px;
+    position: absolute;
+    
+    margin-left: 20px;
+    display: none;
+    z-index: 1;
+}
+.menu > ul > li > ul > li{
+    width: 90px;
+    line-height: 20px;
+    list-style-type: none;
+    background-color: gray;
+    border-radius: 10px;
+}
+.menu > ul > li > ul > li > a{
+    padding: 5px 10px;
+    display: block;
+    color: #fff;
+    border-radius: 10px;
+    font-family: Source-Serif-Pro-ExtraLight;
+    font-size: 13px;
+}
+.menu > ul > li:hover > a{
+    background-color: #76c38f;
+}
+.menu > ul > li:hover > ul{
+    display: block;
+} 
+.menu > ul > li > ul > li > a:hover {
+    background-color: lime;
+    color: blue;
+}
+.menu > ul > li > ul > li:hover{
+    margin-left: -10px;
+}
+/*=================head bar================*/
+.head_bar{
+    z-index: -1;
+    height: 480px;
+}
+
+.left{
+    height: 480px;
+    width: 20px;
+    float: left;
+}
+.left img{
+    margin-top: 200px;
+}
+.text_block{
+    height: 480px;
+    width: 445px;
+    float: left;
+    padding: 100px 100px 0 40px;
+    box-sizing: border-box;
+}
+.text_block h1{
+    font-family: ;
+    font-size: 46px;
+    color: #fff;
+}
+.text_block p{
+    font-family: Source-Serif-Pro-ExtraLight;
+    font-size: 12px;
+    line-height: 20px;
+    color: #979797;
+}
+.text_block a{
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: #76c38f;
+    font-family: Source-Serif-Pro-ExtraLight;
+}
+.image_holder{
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    background-color: #333333;
+    border: 25px solid #6b6b6b;
+    float: left;
+    overflow: hidden;
+}
+.image_holder img{
+    width: 380px;
+    height: 380px;
+}
+.right{
+    height: 480px;
+    width: 20px;
+    float: right;
+}
+.right img{
+    margin-top: 200px;
+    float: right;
+}
+
+/*==============================================
+                    body part
+===============================================*/
+.body_full{
+    height: 1000px;
+    background-color: #660000;
+    box-sizing: border-box;
+}
+
+/*================service===================*/
+
+.body_content{
+    height: 455px;
+    border-bottom: 4px solid #303030;
+}
+.body_content .content{
+    width: 225px;
+    height: 305px;
+    margin-top: 60px;
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.body_content .content:last-child{
+    margin-right:0;
+}
+.body_content .content .image{
+    width: 120px;
+    height: 120px;
+    background-color: #333333;
+    margin: 22px 52.5px 16px 52.5px;
+}
+.body_content .content .image img{
+    width: 120px;
+    height: 120px;
+}
+.body_content .content .text{
+    color: #4c555e;
+    text-align: center;
+}
+.body_content .content .text h4{
+    margin: 0 45px;
+    padding-bottom: 20px;
+    color: #333333;
+    font-size: 32px;
+}
+.body_content .content .text p{
+    font-family: Source-Serif-Pro-ExtraLight;
+    padding: 0 30px;
+    font-size: 12px;
+    color: #979797;
+}
+.body_content .content:hover{
+    background-color: #76c38f;
+}
+.body_content .content:hover h4{
+    color: #fff;
+}
+.body_content .content:hover p{
+    color: #fff;
+}
+
+/*================Latest works===================*/
+
+.letest_work .heading{
+    height: 50px;
+    width: 960px;
+    text-align: center;
+    margin-top: -35px;
+    
+}
+.letest_work .heading h2{
+    padding: 13px 14px;
+    background-color: #303030;
+    border-radius: 10px;
+    margin: 0 350px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.letest_work .works .work{
+    width: 300px;
+    height: 430px;
+    margin: 40px 30px 60px 0;
+    float: left;
+}
+.letest_work .works .work:last-child{
+    margin-right: 0;
+}
+.letest_work .works .work img{
+    width: 290px;
+    height: 190px;
+    z-index: -1;
+}
+.letest_work .works .work h3{
+    width: 290px;
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.letest_work .works .work .up{
+    height: 190px;
+    width: 290px;
+    border: 5px solid #fff;
+    background-color: #353535;
+    position: relative;
+}
+.letest_work .works .work .down{
+    height: 190px;
+    width: 290px;
+    border: 5px solid #fff;
+    margin-top: 30px;
+    background-color: #353535;
+    position: relative;
+}
+.letest_work .works .work .up:hover{
+    border: 5px solid #76c38f;
+}
+.letest_work .works .work .down:hover{
+    border: 5px solid #76c38f;
+}
+
+
+/*==============================================
+                   footer content part
+===============================================*/
+
+.footer_content_full{
+    font-family: Source-Serif-Pro-ExtraLight;
+    background-color: #303030;
+    border-bottom: 1px solid #000;
+}
+.footer_content{
+    height: 385px;
+}
+.footer_content h3{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+.footer_content h6{
+    color: #666666;
+}
+.footer_content p{
+    line-height: 20px;
+    font-size: 13px;
+    color: #989898;
+}
+.footer_content a,h4{
+    font-size: 13px;
+    color: #76c38f;
+}
+
+.footer_content .box{
+    width: 225px;
+    height: 385px;
+    margin-right: 20px;
+    float: left;
+}
+.footer_content .box:last-child{
+    margin-right: 0;
+}
+.footer_content .blog{
+
+
+}
+
+/*=================quick links===================*/
+
+.footer_content .links ul{
+    list-style-image: url('../img/arrow.png');
+    padding-left: 15px;
+
+}
+.footer_content .links ul li{
+    border-bottom: 1px solid #404040;
+    padding: 8px 0;
+}
+
+/*======================tweest===================*/
+
+.footer_content .tweets{
+    
+}
+
+/*======================contact===================*/
+
+.footer_content .contact{
+}
+.contact form{
+    color: #989898;
+    font-size: 16px;
+}
+.contact form .name{
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #989898;
+    height: 30px;
+    width: 225px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: #222222;
+}
+.contact form .email{
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #989898;
+    height: 30px;
+    width: 225px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: #222222;
+}
+.contact form .subject{
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #989898;
+    height: 30px;
+    width: 225px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: #222222;
+}
+.contact form .message{
+    padding-top: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #989898;
+    font-size: 16px;
+    height: 110px;
+    width: 225px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: #222222;
+    resize: none;
+}
+.contact form .submit{
+    height: 30px;
+    width: 80px;
+    color: #fff;
+    background-color: #76c38f;
+    border-radius: 5px;
+    border: 0;
+    padding: 7px 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact form .submit:hover{
+    transform: scale(1.02);
+}
+/*==============================================
+                    footer part
+===============================================*/
+
+.footer_full{
+    font-family: Source-Serif-Pro-ExtraLight;
+    height: 59px;
+    background-color: #2b2b2b;
+    border-top: 1px solid #3a3a3a;
+}
+.footer{
+    line-height: 59px;
+    color: #979797;
+}
+
+
